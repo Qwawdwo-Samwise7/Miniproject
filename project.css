@@ -1,0 +1,1609 @@
+body{
+    background-color:whitesmoke;
+}
+
+.Header{
+    height: 38rem;
+  /* border-bottom-right-radius: 300px;*/
+    background:linear-gradient(45deg,whitesmoke,#f7c584) ;
+    width: 100%;
+   
+}
+.sam-link{
+    display: flex;
+    color: darkgreen;
+    padding-top: 20px;
+    padding-left: 40px;
+    font-weight: bolder;
+    animation-name: fadein;
+    animation-duration:1s ;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+    opacity: 0;
+    transform: translateY(0px);
+}
+@keyframes fadein{
+    from {
+       opacity: 0;
+       transform: translateY(0px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(50px);
+   }
+   }
+
+*{
+    margin: 0;
+}
+  span.fd{
+    color: rgba(255, 166, 0, 0.975);
+    display: flex;
+}
+
+.dish{
+   width: 400px;
+   height: 400px;
+   margin-left: 280px;
+   border-radius: 50%;
+   box-shadow: 0px 10px 15px 1px rgba(23, 23, 23, 0.678);
+   overflow: hidden;
+   padding-top: 0px;
+  
+}
+
+.link{
+    display: flex;
+    margin-left: 550px;
+    gap: 10px;
+}
+
+.link li{
+    list-style: none;
+    margin-left: 20px;
+}
+
+.link li a{
+    color: darkgreen;
+    transition: 0.2s ease-in-out;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+    transition-delay:0.3s ease-in-out;
+    font-weight: bold;
+}
+.link li a:hover{
+ text-shadow: 5px 3px 4px  black;
+color: rgb(245, 249, 245);
+    
+}
+ 
+.clark{
+    display: flex;
+    margin-top: 20px;
+}
+
+.wrap{
+    animation-name: fadein;
+     animation-duration:1s ;
+     animation-fill-mode: forwards;
+     animation-delay: 0.5s;
+     opacity: 0;
+     transform: translateX(50px);
+     }
+ @keyframes fadein{
+   from {
+      opacity: 0;
+      transform: translateX(50px);
+   }
+   to {
+     opacity: 1;
+     transform: translateX(0);
+  }
+  }
+ .eat{
+     font-size: 60px;
+     margin-left: 40px;
+     margin-top: 40px;
+     color: rgb(238, 130, 6);
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     
+ }
+ .perfect{
+     margin-left:40px ;
+     margin-top: 20px;
+     font-size: 40px;
+     color: darkgreen;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+     
+ .p{
+     margin-left: 40px;
+     margin-top: 10px;
+     font-size: 15px;
+     font-weight: bolder;
+     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+ }
+ 
+ 
+.dropdown{
+    position: relative;
+}
+.display{
+    margin-left: 35px;
+    margin-top: 50px;
+    width: 120px;
+    height: 30px;
+    border-radius: 15px  15px 15px  0px;
+    background-color: darkgreen;
+    color: aliceblue;
+    border: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: 0px 4px 5px 1px rgb(68, 67, 67);
+    transition: 0.2s ease-in;
+}
+
+.display:hover{
+    width: 125px;
+    height: 35px;
+    border-radius: 20px 20px 20px 0px; 
+}
+.dropdown-menu{
+    width: 20rem;
+    position: absolute;
+    left: 0;
+    margin-left: 33px;
+    border-radius: 5px;
+    padding: .75rem;
+    top: calc(100% + .25rem); 
+    background-color:green;
+    box-shadow:0 2px 5px 0 rgba(0,0,0,.1) ;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out,transform 0.3s ease-in-out;
+    transform: translateY(20px);
+    color: aliceblue;
+    display: block;
+    
+}
+.dropdown > .display:focus + .dropdown-menu{
+    opacity: 1;
+    transform: translateY(0);
+}
+.DM{
+   transition: s ease-in-out;
+   padding: 5px;
+}
+.DM:hover{
+    background-color:rgb(227, 228, 228);
+    color: green;
+    
+}
+.pricing{
+    color: rgb(248, 163, 6);
+    font-weight: bold;
+    font-family:'Times New Roman', Times, serif;
+}
+.login{
+    width: 320px;
+    height: 350px;
+    background-position: center;
+    background-size: cover;
+    background: linear-gradient(to top ,rgba(13, 13, 13, 0.5) 25%, rgba(7, 7, 7, 0.5) 25%),url(/edziban.jpg);
+    color:whitesmoke ;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    padding: 70PX 30PX;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px 0px black;
+}
+.account{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    color:orange;
+}
+.login p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+
+}
+.login input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.login input[type="text"], input[type="email"],input[type="number"]{
+    border: none;
+    border-bottom: 1px solid white;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: whitesmoke;
+}
+.login input[placeholder="Enter Username"],input[placeholder="Enter your email"],input[placeholder="Enter your phone number"]{
+    color: rgb(212, 211, 211);
+    font-size: 16px;
+}
+.login a{
+    text-decoration: none;
+    font-size: 16px;
+    color: lightgrey;
+}
+.login a:hover{
+    color: orange;
+}
+.login input[type="submit"]{
+    width: 100px;
+    padding-right: 20px;
+    height: 25px;
+    border: none;
+    border-radius: 5px;
+    transition: 0.2s ease;
+}
+.login input[type="submit"]:hover{
+color: white;
+background-color: orange;
+cursor: pointer;
+transform: scale(1.1);
+}
+ .h{
+    width: 70rem;
+    height: 0.2rem;
+    margin-right: auto;
+    margin-left: auto;
+    background: linear-gradient(45deg,black,#f7c584,black);
+    border: none;
+    margin-top: 5rem;
+ }
+
+.special-dish{
+    width: 35rem;
+    height: 6rem;
+    margin-left: auto;
+    margin-right:auto ;
+    border-radius: 30px 30px 30px 0px ;
+    border-color: 1px solid rgb(223, 162, 88);
+    text-align: center;
+    margin-top: 40px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:black;
+    background: linear-gradient(45deg,black,orange);
+    -webkit-background-clip:text;
+     -webkit-text-fill-color:transparent;
+}
+
+.shadow{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    gap: 20px;
+    height: 37rem;
+}
+.Gt{
+    margin-top: 10px;
+    text-align: center;
+    color:rgb(10, 10, 10) ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: x-large;
+    background: linear-gradient(180deg,rgb(16, 16, 16),orange);
+    -webkit-background-clip:text;
+     -webkit-text-fill-color:transparent;
+}
+  .container{
+ width: 490px;
+ height: 500px;
+ overflow: hidden;
+ position:relative;
+ margin-top: 25px;
+ box-shadow: 0px 5px 5px 0px rgb(45, 45, 45);
+border-radius: 7px;
+}
+.picture img{
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+    position: absolute;
+    border-radius: 5px; 
+ }
+ .picture{
+     width: 100%;
+     height: 100%;
+ }
+   
+ .container:hover img{
+        transform: scale(1.1);
+  }
+
+.hold{
+    width: 230px;
+    height: 250px;
+    overflow: hidden;
+    position:relative;
+    margin-top: 25px;
+    box-shadow: 0px 5px 5px 0px rgb(45, 45, 45);
+   border-radius: 7px;
+   
+   }
+   .photo img{
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+    position: absolute;
+    border-radius: 5px;
+    
+    }
+    .photo{
+        width: 100%;
+        height: 100%;
+    }
+    .hold:hover img{
+        transform: scale(1.1);
+     }
+   .serve{
+    width: 230px;
+    height: 250px;
+    overflow: hidden;
+    position:relative;
+    margin-top: 25px;
+    box-shadow: 0px 5px 5px 0px rgb(45, 45, 45);
+   border-radius: 7px;
+   }
+   .mage img{
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+    position: absolute;
+    border-radius: 5px;
+    
+    }
+    .mage{
+        width: 100%;
+        height: 100%;
+    }
+    .serve:hover img{
+        transform: scale(1.1);
+     }
+
+   .inward{
+    width: 480px;
+    height: 227px;
+    overflow: hidden;
+    position:relative;
+    margin-top: 25px;
+    box-shadow: 0px 5px 5px 0px rgb(45, 45, 45);
+   border-radius: 7px;
+     }
+     .immm img{
+        width: 100%;
+        height: 100%;
+        transition: transform 0.5s ease-in-out;
+        position: absolute;
+        border-radius: 5px;
+        
+        }
+        .immm{
+            width: 100%;
+            height: 100%;
+        }
+      .inward:hover img{
+            transform: scale(1.1);
+       }
+
+.start{
+    display: flex;
+    gap: 20px;
+}
+ 
+.extra-foods{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    height: 24rem;
+  
+}
+.horizontal{
+  width: 50rem;
+  height: 0.2rem;
+  margin-right: auto;
+  margin-left: auto;
+  background: linear-gradient(45deg,black,#f7c584,black);
+  border: none;
+}
+.container-element{
+    width: 260px;
+    height: 300px;
+    overflow: hidden;
+    position:relative;
+    margin-top: 25px;
+    box-shadow: 0px 5px 10px 0px;
+   border-radius: 5px;
+   
+   }
+   picture img{
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+    position: absolute;
+    border-radius: 5px;
+    
+    }
+    .picture{
+        width: 100%;
+        height: 100%;
+    }
+    .container-element:hover img{
+        transform: scale(1.1);
+     }
+
+  .ngg{
+    width: 12rem;
+    height: 12rem;
+    box-shadow: 0px 5px 5px 0px rgb(45, 45, 45);
+    transition: 0.5s;
+    transition-delay: 0.1s ease-in-out;
+    border-top-right-radius: 40px;
+    margin-top: 10px;
+    
+  } 
+
+  .ngg:hover{
+    width:15rem ;
+    height: 15rem; 
+  }
+
+  .ffr{
+    width: 12rem;
+    height: 12rem;
+    box-shadow: 0px 5px 5px 0px rgb(45, 45, 45) ;
+    transition:0.5s;
+    transition-delay: 0.1s ease-in-out;
+    border-top-right-radius: 40px;
+    margin-top: 10px;
+  } 
+
+  .ffr:hover{
+    width:15rem ;
+    height: 15rem; 
+  }
+
+  .sndw{
+    width: 12rem;
+    height: 12rem;
+    box-shadow: 0px 1px 5px 0px;
+    transition: 0.5s;
+    transition-delay: 0.1s ease-in-out;
+    border-top-right-radius: 40px;
+    margin-top: 10px;
+  }
+
+  .sndw:hover{
+    width:15rem ;
+    height: 15rem; 
+  } 
+
+  .amp{
+    width: 12rem;
+    height: 12rem;
+    box-shadow: 0px 5px 5px 0px rgb(45, 45, 45);
+    transition: 0.5s;
+    transition-delay: 0.1s ease-in-out;
+    border-top-right-radius: 40px;
+    margin-top: 10px;
+  }
+
+  .amp:hover{
+    width:15rem ;
+    height: 15rem; 
+  }
+
+
+.mate{
+    margin-top: 250px;
+    width: 350px;
+    height: 300px;
+    margin-left: 25%;
+}
+
+.image {
+     width: 450px;
+     height: 450px;
+     margin-left: 200px;
+     border-radius: 50%;
+     overflow: hidden;
+     box-shadow: 0px 0px 30px 2px rgba(133, 133, 134, 0.678);
+}
+
+.barry{
+    display: block;
+    margin-right: 50px;
+    margin-top: 90px; 
+}
+
+.description{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.ish{
+  display: block;
+  margin-top: 30px;
+}
+
+.explore{
+    margin-left: 5px;
+    margin-top: 50px;
+    width: 120px;
+    height: 30px;
+    background-color: darkgreen;
+    color: aliceblue;
+    border-radius: 15px  15px 15px  0px;
+    border: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: 0px 4px 5px 1px rgb(68, 67, 67);
+    transition: 0.2s ease-in;
+}
+
+.explore:hover{
+    width: 125px;
+    height: 35px;
+    border-radius: 20px 20px 20px 0px; 
+}
+
+  /*.aduane{
+    width: 250px;
+    height: 250px;
+    padding-top: 30px;
+}*/
+
+.db{
+    padding-left: px;
+}
+
+.time{
+    margin-top: 100px;
+    text-align: center;
+    font-weight: bolder;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    margin-left: auto;
+    margin-right: auto;
+    height: 5rem;
+    width: 30rem;
+    border-radius: 30px 30px 30px 0px ;
+    color:black
+}
+
+.shade{
+    color: rgb(235, 137, 10);
+}
+.wise{
+     background: linear-gradient(45deg,darkgreen,orange);
+     -webkit-background-clip:text;
+     -webkit-text-fill-color:transparent;
+}    
+
+.one-container{
+    height: 400px;
+    width: 250px;
+    border: none;
+    border-radius: 20px;
+    background-color: whitesmoke;
+    margin-right: 60px;
+   
+}
+.one-flipper{
+    transform-style: preserve-3d;
+    transition: all 0.8s ease;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.one-flipper:hover{
+transform: rotateY(180deg);
+}
+.front-one{
+   width: 250px;
+   height: 400px;
+   position: absolute;
+   backface-visibility: hidden;
+   text-align: center;
+  box-shadow: 0px 2px 5px 0px;
+   
+}
+.der{
+    width: 250px;
+    height: 400px;
+}
+
+.back-one{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+   text-align: center;
+   background-color: rgb(125, 171, 200);
+   box-shadow: 0px 2px 5px 0px;
+}
+
+ .back-one{
+    transform: rotateY(180deg);
+}
+.two-container{
+    height: 400px;
+    width: 250px;
+    border:none;
+    border-radius: 20px;
+    background-color:whitesmoke;
+}
+.two-flipper{
+    transform-style: preserve-3d;
+    transition: all 0.8s ease;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    
+}
+.two-flipper:hover{
+    transform: rotateY(180deg);
+    }
+.two-front{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    text-align: center;
+    box-shadow: 0px 2px 5px 0px;
+    }
+    .pik{
+        width: 250px;
+        height: 400px;
+    }
+
+.two-back{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    text-align: center;
+    background: linear-gradient(45deg, rgb(96, 63, 181),rgb(4, 138, 248));
+    box-shadow: 0px 2px 5px 0px;
+}
+
+.two-back{
+    transform: rotateY(180deg);
+}
+
+.three-container{
+    height: 400px;
+    width: 250px;
+    border:none;
+    background-color:whitesmoke ;
+    margin-left: 60px; 
+}
+.three-flipper{
+    transform-style: preserve-3d;
+    transition: all 0.8s ease;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.three-flipper:hover{
+    transform: rotateY(180deg);
+    }
+.three-front{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    text-align: center;
+    box-shadow: 0px 2px 5px 0px;
+}
+.fo{
+    width: 250px;
+    height: 400px;
+}
+
+.three-back{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    text-align: center;
+    background-color:rgb(252, 193, 82);
+    box-shadow: 0px 2px 5px 0px;
+}
+.three-back{
+    transform: rotateY(180deg);
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.ord{
+    text-align: center;
+    padding-top: 10rem;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(247, 244, 244);
+  
+
+}
+.fol{
+    margin-top: 10px;
+    font-size: 20px;
+    color: black;
+}
+
+.pickup{
+    text-align: center;
+    padding-top: 10rem;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(248, 250, 248);
+   
+}
+
+.del{
+    margin-top: 10px;
+    font-size: 20px;
+}
+.enjoy{
+    text-align: center;
+    padding-top: 10rem;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(253, 251, 249);
+   
+}
+.char{
+    margin-top: 10px;
+    font-size: 20px;
+}
+p{
+    font-weight: bolder;
+}
+
+.grade{
+    height: 200px;
+    width: 250px;
+    box-shadow: 0px -10px 15px -7px rgba(172, 172, 173, 0.678);
+    border:none;
+    border-radius: 20px;
+    background-color: brown;
+    text-align: center;
+    background: linear-gradient(red);
+}
+
+.div-exp{
+    height: 4rem;
+    width: 50rem;
+    border-radius: 30px 30px 30px 0px ;
+    margin-left: auto;
+    margin-right: auto;
+    background: linear-gradient(45deg,darkgreen,orange);
+    -webkit-background-clip:text;
+     -webkit-text-fill-color:transparent;
+    text-align: center;
+    margin-top: 100px;
+    font-size: 17px;
+
+}
+ 
+.hor{
+    width: 60rem;
+    height: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    border-radius: 5px;
+    background-color:#F1D7BD ;
+}
+.fruit-juice{
+    height: 25em;
+    width: 100%;
+    /*background-color:#e6e9eb ;*/
+   /* background-color: rgb(233, 231, 231);*/
+    margin-top: 0.9em;
+    display: flex;
+    justify-content: space-evenly;
+     
+}
+
+.drinks{
+  width: 14rem;
+  height: 20rem;
+  margin-top: 40px;
+  box-shadow: 0px 5px 9px 0px rgb(59, 59, 59);
+  transition: 0.5s ease;
+  object-fit: cover;
+ 
+
+}
+.drinks:hover{
+    transform: scale(1.1);
+    overflow: hidden;
+}
+
+.Opened{
+    text-align: center;
+    margin-bottom: 30px;
+    color: darkgreen;
+ }
+span.Opened{
+    color: orange;
+}
+
+.big-foot{
+    background-color: darkgreen;
+    height: 250px;
+   border-top-right-radius: 300px;
+    display: block;
+}
+ .social-media{
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  padding-top: 40px;
+}
+.fa-brands{
+  transition: 0.3s ease;
+  font-size: 20px;
+  color: rgb(209, 207, 207);
+}
+  .fa-brands:hover{
+  transform: scale(1.1);
+  color:black;
+ }
+
+.ref{
+   display: flex; 
+   justify-content: center;
+   gap: 20px;
+   padding-top:30px;
+   padding-left: 0;
+}
+.fa-solid{
+    font-size: 10px;
+}
+
+.ref li {
+    list-style: none;
+}
+
+.ref li a{
+    text-decoration: none;
+    color: rgb(223, 221, 221);
+    transition: 0.3s ease-in-out;
+    transition-delay: 0.2s ease-in-out;
+    font-weight: bold;
+}
+
+.ref li a:hover{
+    color:black;
+}
+
+.sfd{
+    font-size: 15px;
+   text-align: center;
+   padding-top:15px;
+   color: rgb(224, 224, 224);
+}
+.fa-regular{
+    font-size: 1px;
+}
+.mail{
+    font-weight: 500;
+    color: rgb(224, 224, 224);
+    text-align: center;
+    padding-top: 20px;
+    
+}
+.contact{
+    font-weight: 500;
+    color: rgb(219, 219, 219);
+    text-align: center;
+    padding-top: 10px;
+}
+ 
+.end{
+    background:linear-gradient(45deg,whitesmoke,#f7c584);
+    text-align: center;
+}
+ .s7{
+    color: darkgreen;
+    margin-left: 40px;
+ }
+span{
+    color: rgba(255, 166, 0, 0.975)
+}
+
+@media screen and (max-width : 600px) {
+    body{
+     width: 75rem;
+    }
+    .dish{
+        width: 400px;
+        height: 400px;
+        margin-left: 300px;
+        padding-top: 0px;
+       
+     }
+     
+     .link{
+         display: flex;
+         margin-left: 500px;
+         gap: 10px;
+         font-size: 20px;
+     }
+     
+     .link li a{
+         font-weight: bold;
+     }
+
+     .p{
+        font-size: 20px;
+    }
+
+    .Opened{
+       font-size: 23px;
+     }
+
+     .display{
+        width: 170px;
+        height: 30px;
+        font-size: 15px;
+    }
+    
+    .display:hover{
+        width: 175px;
+        height: 35px;
+    }
+    .dropdown-menu{
+        width: 30rem;
+       height: 45rem;
+       font-size: 23px;
+       color: white;
+    }
+    .DM{
+       padding: 7px;
+    }
+    
+    .login{
+        width: 620px;
+        height: 650px;
+
+    }
+    .account{
+        font-size: 40px;
+    }
+    .login p{
+        margin: 0;
+        padding: 0;
+        font-weight: bold;
+        font-size:30px ;
+    }
+    .login input{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .login input[type="text"], input[type="email"],input[type="number"]{
+        height: 100px;
+    }
+    .login input[placeholder="Enter Username"],input[placeholder="Enter your email"],input[placeholder="Enter your phone number"]{
+        font-size: 36px;
+    }
+    .login a{
+        font-size: 20px;
+    }
+    .login a:hover{
+        color: orange; 
+    }
+    .login input[type="submit"]{
+        width: 120px;
+        padding-right: 20px;
+        height: 30px;
+        font-size: 20px;
+
+    }
+   
+    .shade{
+        font-size: 28px;
+    }
+
+    .ish{
+        display: block;
+        margin-top: 30px;
+        font-size: 20px;
+      }
+      
+      .explore{
+          width: 170px;
+          height: 30px;
+          font-size: 15px;
+      }
+      
+      .explore:hover{
+          width: 175px;
+          height: 35px;
+      }
+
+      .big-foot{
+        height: 320px;
+        font-size: 30px;
+        display: block;
+    } 
+    .sfd{
+        font-size: 25px;
+    
+    }
+    li a .fa-solid{
+        display: none;
+    }
+
+}
+    @media screen and (max-width : 750px) {
+        body{
+         width: 75rem;
+        }
+        .dish{
+            width: 400px;
+            height: 400px;
+            margin-left: 300px;
+            padding-top: 0px;
+           
+         }
+         
+         .link{
+             display: flex;
+             margin-left: 500px;
+             gap: 10px;
+             font-size: 20px;
+         }
+         
+         .link li a{
+             font-weight: bold;
+         }
+    
+         .p{
+            font-size: 20px;
+        }
+    
+        .Opened{
+           font-size: 23px;
+         }
+    
+         .display{
+            width: 170px;
+            height: 30px;
+            font-size: 15px;
+        }
+        
+        .display:hover{
+            width: 175px;
+            height: 35px;
+        }
+        .dropdown-menu{
+            width: 30rem;
+           height: 45rem;
+           font-size: 23px;
+           color: white;
+        }
+        .DM{
+           padding: 7px;
+        }
+        
+        .login{
+            width: 620px;
+            height: 650px;
+    
+        }
+        .account{
+            font-size: 40px;
+        }
+        .login p{
+            margin: 0;
+            padding: 0;
+            font-weight: bold;
+            font-size:30px ;
+        }
+        .login input{
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .login input[type="text"], input[type="email"],input[type="number"]{
+            height: 100px;
+        }
+        .login input[placeholder="Enter Username"],input[placeholder="Enter your email"],input[placeholder="Enter your phone number"]{
+            font-size: 36px;
+        }
+        .login a{
+            font-size: 20px;
+        }
+        .login a:hover{
+            color: orange; 
+        }
+        .login input[type="submit"]{
+            width: 120px;
+            padding-right: 20px;
+            height: 30px;
+            font-size: 20px;
+    
+        }
+       
+        .shade{
+            font-size: 28px;
+        }
+    
+        .ish{
+            display: block;
+            margin-top: 30px;
+            font-size: 20px;
+          }
+          
+          .explore{
+              width: 170px;
+              height: 30px;
+              font-size: 15px;
+          }
+          
+          .explore:hover{
+              width: 175px;
+              height: 35px;
+          }
+    
+          .big-foot{
+            height: 320px;
+            font-size: 30px;
+            display: block;
+        } 
+        .sfd{
+            font-size: 25px;
+        
+        }
+        li a .fa-solid{
+            display: none;
+        }
+    }
+
+    @media screen and (max-width : 850px) {
+        body{
+         width: 85rem;
+        }
+
+        .Header{
+            width: 85rem;
+        }
+        .dish{
+            width: 400px;
+            height: 400px;
+            margin-left: 300px;
+            padding-top: 0px;
+           
+         }
+         
+         .link{
+             display: flex;
+             margin-left: 590px;
+             gap: 10px;
+             font-size: 25px;
+         }
+         
+         .link li a{
+             font-weight: bold;
+         }
+    
+         .p{
+            font-size: 26px;
+        }
+    
+        .Opened{
+           font-size: 28px;
+         }
+    
+         .display{
+            width: 170px;
+            height: 33px;
+            font-size: 15px;
+        }
+        
+        .display:hover{
+            width: 175px;
+            height: 35px;
+        }
+        .dropdown-menu{
+            width: 32rem;
+           height: 46rem;
+           font-size: 25px;
+           color: white;
+        }
+        .DM{
+           padding: 7px;
+        }
+        
+        .login{
+            width: 620px;
+            height: 650px;
+    
+        }
+        .account{
+            font-size: 40px;
+        }
+        .login p{
+            margin: 0;
+            padding: 0;
+            font-weight: bold;
+            font-size:30px ;
+        }
+        .login input{
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .login input[type="text"], input[type="email"],input[type="number"]{
+            height: 100px;
+        }
+        .login input[placeholder="Enter Username"],input[placeholder="Enter your email"],input[placeholder="Enter your phone number"]{
+            font-size: 36px;
+        }
+        .login a{
+            font-size: 20px;
+        }
+        .login a:hover{
+            color: orange; 
+        }
+        .login input[type="submit"]{
+            width: 120px;
+            padding-right: 20px;
+            height: 30px;
+            font-size: 20px;
+    
+        }
+        
+        .shade{
+            font-size: 28px;
+        }
+    
+        .ish{
+            display: block;
+            margin-top: 30px;
+            font-size: 23px;
+          }
+          
+          .explore{
+              width: 170px;
+              height: 33px;
+              font-size: 15px;
+          }
+          
+          .explore:hover{
+              width: 175px;
+              height: 35px;
+          }
+    
+          .big-foot{
+            height: 320px;
+            font-size: 30px;
+            display: block;
+        } 
+        .sfd{
+            font-size: 25px;
+        
+        }
+        li a .fa-solid{
+            display: none;
+        }
+    }
+    @media screen and (max-width : 900px) {
+        body{
+         width: 85rem;
+        }
+
+        .Header{
+            width: 85rem;
+        }
+        .dish{
+            width: 400px;
+            height: 400px;
+            margin-left: 300px;
+            padding-top: 0px;
+           
+         }
+         
+         .link{
+             display: flex;
+             margin-left: 590px;
+             gap: 10px;
+             font-size: 25px;
+         }
+         
+         .link li a{
+             font-weight: bold;
+         }
+    
+         .p{
+            font-size: 26px;
+        }
+    
+        .Opened{
+           font-size: 28px;
+         }
+    
+         .display{
+            width: 170px;
+            height: 33px;
+            font-size: 15px;
+        }
+        
+        .display:hover{
+            width: 175px;
+            height: 35px;
+        }
+        .dropdown-menu{
+            width: 32rem;
+           height: 46rem;
+           font-size: 25px;
+           color: white;
+        }
+        .DM{
+           padding: 7px;
+        }
+        
+        .login{
+            width: 620px;
+            height: 650px;
+    
+        }
+        .account{
+            font-size: 40px;
+        }
+        .login p{
+            margin: 0;
+            padding: 0;
+            font-weight: bold;
+            font-size:30px ;
+        }
+        .login input{
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .login input[type="text"], input[type="email"],input[type="number"]{
+            height: 100px;
+        }
+        .login input[placeholder="Enter Username"],input[placeholder="Enter your email"],input[placeholder="Enter your phone number"]{
+            font-size: 36px;
+        }
+        .login a{
+            font-size: 20px;
+        }
+        .login a:hover{
+            color: orange; 
+        }
+        .login input[type="submit"]{
+            width: 120px;
+            padding-right: 20px;
+            height: 30px;
+            font-size: 20px;
+    
+        }
+        
+        .shade{
+            font-size: 28px;
+        }
+    
+        .ish{
+            display: block;
+            margin-top: 30px;
+            font-size: 23px;
+          }
+          
+          .explore{
+              width: 170px;
+              height: 33px;
+              font-size: 15px;
+          }
+          
+          .explore:hover{
+              width: 175px;
+              height: 35px;
+          }
+    
+          .big-foot{
+            height: 320px;
+            font-size: 30px;
+            display: block;
+        } 
+        .sfd{
+            font-size: 25px;
+        
+        }
+        .container-element{
+            width: 300px;
+            height: 350px;
+           }
+           .drinks{
+            width: 15rem;
+            height: 22rem;
+          }
+          .div-exp{
+            font-size: 20px;
+        
+        }
+        li a .fa-solid{
+            display: none;
+        }
+    }
+
+    @media screen and (max-width : 1000px) {
+        body{
+         width: 85rem;
+        }
+
+        .Header{
+            width: 85rem;
+        }
+        .dish{
+            width: 400px;
+            height: 400px;
+            margin-left: 300px;
+            padding-top: 0px;
+           
+         }
+         
+         .link{
+             display: flex;
+             margin-left: 590px;
+             gap: 10px;
+             font-size: 25px;
+         }
+         
+         .link li a{
+             font-weight: bold;
+         }
+    
+         .p{
+            font-size: 26px;
+        }
+    
+        .Opened{
+           font-size: 28px;
+         }
+    
+         .display{
+            width: 170px;
+            height: 33px;
+            font-size: 15px;
+        }
+        
+        .display:hover{
+            width: 175px;
+            height: 35px;
+        }
+        .dropdown-menu{
+            width: 32rem;
+           height: 46rem;
+           font-size: 25px;
+           color: white;
+        }
+        .DM{
+           padding: 7px;
+        }
+        
+        .login{
+            width: 620px;
+            height: 650px;
+    
+        }
+        .account{
+            font-size: 40px;
+        }
+        .login p{
+            margin: 0;
+            padding: 0;
+            font-weight: bold;
+            font-size:30px ;
+        }
+        .login input{
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .login input[type="text"], input[type="email"],input[type="number"]{
+            height: 100px;
+        }
+        .login input[placeholder="Enter Username"],input[placeholder="Enter your email"],input[placeholder="Enter your phone number"]{
+            font-size: 36px;
+        }
+        .login a{
+            font-size: 20px;
+        }
+        .login a:hover{
+            color: orange; 
+        }
+        .login input[type="submit"]{
+            width: 120px;
+            padding-right: 20px;
+            height: 30px;
+            font-size: 20px;
+    
+        }
+        
+        .shade{
+            font-size: 28px;
+        }
+    
+        .ish{
+            display: block;
+            margin-top: 30px;
+            font-size: 23px;
+          }
+          
+          .explore{
+              width: 170px;
+              height: 33px;
+              font-size: 15px;
+          }
+          
+          .explore:hover{
+              width: 175px;
+              height: 35px;
+          }
+    
+          .big-foot{
+            height: 320px;
+            font-size: 30px;
+            display: block;
+        } 
+        .sfd{
+            font-size: 25px;
+        
+        }
+        .container-element{
+            width: 300px;
+            height: 350px;
+           }
+           .drinks{
+            width: 15rem;
+            height: 22rem;
+          }
+          .div-exp{
+            font-size: 20px;
+        
+        }
+
+    .div-exp{
+        font-size: 20px;
+    }
+
+    .container{
+        width: 550px;
+        height: 550px;
+       }
+
+       .hold{
+        width: 280px;
+        height: 295px;
+       }
+       .serve{
+        width: 280px;
+        height: 295px;
+       }
+      
+       .inward{
+        width: 570px;
+        height: 227px;
+       
+     }
+     .Gt{
+        margin-top: 50px;
+        font-size: 30px;
+     }
+
+     li a .fa-solid{
+        display: none;
+    }
+}

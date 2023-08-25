@@ -1,0 +1,320 @@
+body{
+  background-color: rgb(230, 233, 234);
+  background: rgb(1, 74, 1);
+}
+.ref{
+    display: flex; 
+    justify-content: center;
+    gap: 2rem;
+    padding-top:1rem;
+    padding-right: 1.5rem;
+    
+ }
+ .ref li{
+list-style: none;
+ }
+ .ref li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: gray;
+}
+.fa-phone{
+    font-size: 2rem;
+}
+.fa-solid{
+    font-size: 0.5rem;
+}
+
+.contact-menu{
+    width: 57rem;
+    height: 32rem;
+    background-color:white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    display: flex;
+    border-radius: 6px;
+    box-shadow: -1pc 10pc 20pc 1pc rgb(33, 33, 33); 
+}
+.cont{
+    text-align: center;
+    letter-spacing: 3px;
+    color: green;
+    font-size: 40px;
+}
+
+.send{
+    color: orange;
+}
+
+.texts{
+   margin-left: 5rem;
+}
+.input{
+    display: flex;
+    gap: 3rem;
+    font-weight: bold;
+}  
+.input input{
+    width: 11.5rem;
+    height: 2rem;
+    margin-top: 0.5rem;
+} 
+.message-box{
+    padding-top: 1rem;
+    font-weight: bold;
+}
+.message-box input{
+    width: 26.5rem;
+    height:7rem ;
+    margin-top: 0.2rem;
+}
+.message-box input[placeholder="Leave a message here"] {
+   font-size: 15px;
+}
+button{
+  margin-top: 1rem;
+  width: 27rem;
+  height: 3rem;
+  background-color: orange;
+  border: none;
+  box-shadow: 1px 5px 15px  0px rgb(103, 103, 103);
+  font-weight: bold;
+}
+.info{
+  background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(/French\ fries.jpg);
+  background-position: center;
+  background-size: cover;
+  margin-left: auto;
+  width: 19rem;
+  text-align: center;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  color: whitesmoke;
+  
+}
+.in-fo{
+  font-size: 40px;
+  
+}
+ section .fa-envelope{
+  font-size: 1.5rem;
+ }
+.fa-building{
+    font-size: 2rem;
+    margin-top: 1.5rem;
+}
+.fa-phone{
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+   
+}
+.fa-clock{
+    margin-top: 1.5rem;
+    font-size:1.5rem ;
+}
+.time{
+    padding-right: 2rem;
+}
+.phone{
+ padding-right: 2rem;
+}
+.street{
+    padding-right: 4rem;
+}
+.env{
+    padding-left: 2rem;
+}
+
+.social-media{
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    padding-top: 90px;
+    font-size: 1.3rem;
+  }
+
+  @media  screen and (max-width:600px) {
+    body{
+        width: 60rem;
+    }
+    .contact-menu{
+    width: 57rem;
+    height: 82rem;
+    margin-top: 2rem;
+    display: block;
+    
+}
+.cont{
+    text-align: center;
+    letter-spacing: 3px;
+    color: green;
+    font-size: 50px;
+}
+
+.texts{
+    height: 20rem;
+ padding-left: auto;
+ padding-right: auto;
+ }
+ .info{
+    margin-top: 48rem;
+    width: 57rem;
+    text-align: center;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    color: whitesmoke;
+    font-size: 40px;
+  }
+  .send{
+    text-align: center;
+    font-size: 40px;
+
+}
+.input{
+    display: block;
+    justify-content: center;
+    gap: 3rem;
+    font-weight: bold;
+    align-items: center;
+    font-size: 45px;
+}  
+.input input{
+    width: 46.5rem;
+    height: 5rem;
+    margin-top: 0.5rem;
+} 
+
+ input[placeholder="Enter your name"] ,input[placeholder="Enter your email"]{
+  font-size: 25px;
+
+ }
+.message-box{
+    padding-top: 4rem;
+    font-weight: bold;
+    font-size: 45px;
+}
+.message-box input{
+    width: 46.5rem;
+    height:20rem ;
+    margin-top: 0.2rem;
+}
+.message-box input[placeholder="Leave a message here"] {
+   font-size: 25px;
+}
+    .fa-solid {
+   font-size: 2rem;
+   
+}
+
+button{
+    margin-top: 1rem;
+    width: 46.5rem;
+    height: 5rem;
+    font-size: 20px;
+  }
+
+  .ref li a{
+    font-size: 35px;
+}
+ li a .fa-solid {
+   display: none;
+} 
+
+.social-media{
+    gap: 35px;
+    padding-top: 50px;
+    font-size: 2rem;
+  }
+
+  }
+  @media  screen and (max-width:800px) {
+    body{
+        width: 70rem;
+    }
+    .contact-menu{
+    width: 57rem;
+    height: 80rem;
+    margin-top: 2rem;
+    display: block;
+}
+.cont{
+    
+    letter-spacing: 3px;
+    color: green;
+    font-size: 50px;
+}
+
+.texts{
+ height: 20rem;
+ padding-left: auto;
+ padding-right: auto;
+ }
+ .info{
+    margin-top: 48rem;
+    width: 57rem;
+    text-align: center;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    color: whitesmoke;
+    font-size: 40px;
+  }
+  .send{
+    font-size: 40px;
+
+}
+.input{
+    display: block;
+    justify-content: center;
+    gap: 3rem;
+    font-weight: bold;
+    align-items: center;
+    font-size: 45px;
+}  
+.input input{
+    width: 46.5rem;
+    height: 5rem;
+    margin-top: 0.5rem;
+} 
+input[placeholder="Enter your name"] ,input[placeholder="Enter your email"]{
+    font-size: 30px;
+}
+.message-box{
+    padding-top: 4rem;
+    font-weight: bold;
+    font-size: 45px;
+}
+.message-box input{
+    width: 46.5rem;
+    height:20rem ;
+    margin-top: 0.2rem;
+}
+.message-box input[placeholder="Leave a message here"] {
+   font-size: 45px;
+}
+.fa-solid {
+    font-size: 2rem;
+    
+ }
+button{
+    margin-top: 1rem;
+    width: 46.5rem;
+    height: 5rem;
+    font-size: 35px;
+  }
+
+  .ref li a{
+    font-size: 35px;
+}
+  li a .fa-solid {
+    display: none;
+ }
+ .social-media{
+    gap: 35px;
+    padding-top: 50px;
+    font-size: 2.5rem;
+ }
+
+  }
+  
+  
